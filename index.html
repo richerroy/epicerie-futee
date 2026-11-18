@@ -144,11 +144,18 @@ aside.basket{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:aut
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:84px;background:var(--ink);color:var(--paper);padding:10px 14px;border-radius:10px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s;max-width:90vw;z-index:9}
 .toast.on{opacity:1}
 @media (prefers-reduced-motion: reduce){.toast{transition:none}}
+.beta{border:1px solid #e4a59c;background:#fdecea;color:#b3261e;border-radius:10px;padding:10px 14px;margin:0 0 14px;font-size:.95rem;line-height:1.4}
+.beta strong{color:#b3261e}.beta a{color:#b3261e;font-weight:700}
+@media (prefers-color-scheme: dark){.beta{background:#3a1a17;border-color:#7a2f27;color:#ffb4a9}.beta strong,.beta a{color:#ffb4a9}}
+.avis{margin-top:18px;max-width:80ch;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;color:var(--ink)}
+.avis summary{cursor:pointer;font-weight:700;font-family:var(--display)}
+.avis h3{font-size:1rem;margin:14px 0 4px}.avis p{margin:0 0 6px;font-size:.92rem;line-height:1.45}
 footer{color:var(--muted);font-size:.85rem;margin-top:18px;max-width:80ch}
 </style>
 </head>
 <body>
 <div class="wrap">
+  <div class="beta" role="note"><strong>Version BÊTA.</strong> Les prix sont donnés à titre indicatif seulement, pour aider; cette page est gratuite et sans but lucratif. Les recettes n'ont pas été testées. Commentaires et suggestions : <a href="https://www.facebook.com/profile.php?id=61596749667844" target="_blank" rel="noopener">notre page Facebook</a>. <a href="#avis" onclick="var d=document.getElementById('avis');d.open=true;d.scrollIntoView({behavior:'smooth'});return false;">Avis et conditions</a></div>
   <header class="top">
     <div>
       <h1>Épicerie futée Lanaudière</h1>
@@ -250,6 +257,23 @@ footer{color:var(--muted);font-size:.85rem;margin-top:18px;max-width:80ch}
     </aside>
   </div>
 
+  <details class="avis" id="avis">
+    <summary>Avis et conditions d'utilisation</summary>
+    <h3>Projet BÊTA, gratuit et sans but lucratif</h3>
+    <p>Épicerie futée Lanaudière est un outil d'entraide offert gratuitement. Aucun produit ou service n'y est vendu et aucune rémunération n'est reçue des épiceries.</p>
+    <h3>Prix à titre indicatif</h3>
+    <p>Les prix sont tirés des circulaires publiques et de relevés en ligne, puis traités automatiquement. Ils peuvent contenir des erreurs (format, prix, date), être incomplets ou ne plus être valides. Les quantités peuvent être limitées et les prix varier d'un magasin à l'autre. Les taxes ne sont pas incluses. <strong>Le prix affiché en magasin ou dans la circulaire officielle a toujours priorité.</strong></p>
+    <h3>Aucune affiliation</h3>
+    <p>Ce projet n'est ni affilié, ni commandité, ni approuvé par les épiceries mentionnées. Les noms de commerces et les marques appartiennent à leurs propriétaires respectifs et ne servent qu'à identifier où les prix ont été relevés.</p>
+    <h3>Recettes non testées</h3>
+    <p>Les recettes sont des suggestions générales. Elles n'ont pas été testées et ne remplacent pas un avis professionnel. Vérifiez les allergies et intolérances, les dates de péremption et les températures de cuisson sécuritaires (par exemple, la viande hachée doit atteindre 71 °C). Adaptez-les à vos besoins.</p>
+    <h3>Limitation de responsabilité</h3>
+    <p>La page est fournie « telle quelle ». Dans la mesure permise par la loi, l'auteur ne peut être tenu responsable des décisions d'achat, des pertes, des écarts de prix ou des problèmes découlant de l'utilisation de la page ou des recettes.</p>
+    <h3>Vie privée</h3>
+    <p>La page ne demande aucun compte et ne collecte aucun renseignement personnel. Vos choix (budget, liste, recettes) restent dans votre navigateur, sur votre appareil.</p>
+    <h3>Commentaires</h3>
+    <p>Signalez une erreur ou faites une suggestion sur <a href="https://www.facebook.com/profile.php?id=61596749667844" target="_blank" rel="noopener">notre page Facebook</a>. Les messages irrespectueux ou publicitaires peuvent être retirés.</p>
+  </details>
   <footer>Données : circulaires de Super C, Metro, IGA, Maxi et Provigo (semaine du 12 au 18 novembre 2026), et quelques prix réguliers relevés en ligne (Walmart, Dollarama, Pharmaprix). Vérifiez toujours le prix en magasin. Page gratuite, sans lien avec les épiceries.</footer>
 </div>
 
